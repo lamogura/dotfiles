@@ -3,6 +3,9 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 tap 'caskroom/versions'
 
+# pre-req for libcaca and libgit2 can work
+cask 'xquartz'
+
 brew 'ack'
 brew 'coreutils'
 brew 'grc'
@@ -23,6 +26,7 @@ brew 'unrar'
 brew 'wget'
 brew 'sqlite'
 brew 'heroku'
+brew 'python'
 brew 'python3'
 
 cask 'google-chrome'
