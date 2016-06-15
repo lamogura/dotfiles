@@ -30,6 +30,7 @@ brew 'python'
 brew 'python3'
 
 cask 'google-chrome'
+cask 'dropbox'
 cask 'karabiner'
 cask 'dash'
 cask 'iterm2'
