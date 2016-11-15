@@ -1,0 +1,17 @@
+#!/bin/bash
+macbook_path="$HOME/Dropbox/app settings/keyboard settings/karabiner_elements/macbook"
+thinkpad_path="$HOME/Dropbox/app settings/keyboard settings/karabiner_elements/thinkpad"
+config_path="$HOME/.karabiner.d/configuration"
+
+if [ "$config_path" -ef "$macbook_path" ]; then
+  echo "Switching keyboard profile to Thinkpad"
+  rm "$config_path"
+  ln -s "$thinkpad_path" "$config_path"
+elif [ "$config_path" -ef "$thinkpad_path" ]; then
+  echo "Switching keyboard profile to Macbook"
+  rm "$config_path"
+  ln -s "$macbook_path" "$config_path"
+else
+  echo "Setting keyboard profile to Macbook"
+  ln -s "$macbook_path" "$config_path"
+fi
