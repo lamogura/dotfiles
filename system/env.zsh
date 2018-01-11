@@ -1,2 +1,2 @@
-export EDITOR='vscode'
+export EDITOR='code'
 # export EDITOR='lime'
