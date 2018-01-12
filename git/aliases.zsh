@@ -19,3 +19,6 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias gr='git remote -v'
 alias git-nuke='git reset --hard && git clean -fd'
+
+# git config --global alias.git '!exec git'
+alias kraken='open -a "GitKraken" --args -p $(pwd)'
