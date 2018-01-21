@@ -7,3 +7,9 @@ if test -f $completion
 then
   source $completion
 fi
+
+branchcompletion='~/.dotfiles/git/git-completion.bash'
+
+if [ -f branchcompletion ]; then
+  . branchcompletion
+fi
